@@ -10,17 +10,6 @@ body {
   font-size: 16px;
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
-
-.firstview {
-  height: 90vh;
-  background-color: #fff;
-  color: #333;
-  font-size: 50px;
-  letter-spacing: 0.05em;
-  display: grid;
-  place-items: center;
-}
-
 main {
   width: min(1000px, 95%);
   margin: auto;
@@ -34,12 +23,33 @@ section {
 section + section {
   margin-top: 30px;
 }
-section h2 {
-  font-weight: bold;
-  font-size: 24px;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 10px;
+
+/*******
+header
+*******/
+
+/*******
+firstview
+*******/
+.firstview {
+  height: 90vh;
+  background-color: #fff;
+  color: #333;
+
+  letter-spacing: 0.05em;
+  /* display: grid;
+  place-items: center; */
+  text-align: center;
+  position: relative;
 }
+.firstview h1 {
+  font-size: 50px;
+  margin: 10px inherit;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
 
 /*******
 works
