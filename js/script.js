@@ -9,9 +9,9 @@ sections.forEach(el => {
         // ease: 'back',
         scrollTrigger: {
             trigger: el,
-            start: 'top 80%',
+            start: 'top 90%',
             end: '+=300px',
-            // markers: true,
+            markers: true,
             scrub: true,//スクロール量に応じて動く
             // once: true,//一回こっきりかどうか
         }

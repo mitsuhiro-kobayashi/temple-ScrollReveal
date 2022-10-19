@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/8cdec25e91.js" crossorigin="anonymous"></script>
     <!-- GSAP読み込み -->
@@ -15,7 +15,29 @@
     <title>テンプレ|ScrollTriggerを実装</title>
 </head>
 <body>
-    <header>ScrollTrigger</header>
+    <header class="header">
+        <nav class="menu-pc">
+            <ul class="menu-icons">
+                <li class="menu-icon"><a href="#">About</a></li>
+                <li class="menu-icon"><a href="#">Works</a></li>
+                <li class="menu-icon"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- ハンバーガーメニュー -->
+        <button class="hamburger-btn" id="js-hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+        </button>
+        <nav class="menu-sp" id="js-nav">
+            <ul class="menu-icons">
+                <li class="menu-icon"><a href="#">About</a></li>
+                <li class="menu-icon"><a href="#">Works</a></li>
+                <li class="menu-icon"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
     <main>
         <div class="firstview">
             <h1>Mitsuhiro Kobayashi ---</h1>
@@ -26,33 +48,33 @@
             <div class="works">
                 <div class="work">
                     <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><img src="img/yoga-se2.png" alt="名城ヨガスタジオモックアップイメージ"></a>
-                    <h4>デモサイト「名城ヨガスタジオ」</h4>
+                    <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><h4>デモサイト「名城ヨガスタジオ」</h4></a>
                 </div>
                 <div class="work">
                     <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><img src="img/gary-version2.png" alt="ポートフォリオグレイデモサイト"></a>
-                    <h4>スクール課題ポートフォリオデモサイト</h4>
+                    <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><h4>スクール課題ポートフォリオデモサイト</h4></a>
                 </div>
             </div>
         </section>
         <section id="works2">
             <div class="works">
                 <div class="work">
-                    <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><img src="img/techis-sp2.png" alt=""></a>
-                    <h4>スクール課題</h4>
+                    <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><img src="img/techis-sp2.png" alt="スクール課題"></a>
+                    <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><h4>スクール課題</h4></a>
                 </div>
                 <div class="work">
-                    <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><img src="img/abec-pc.png" alt=""></a>
-                    <h4>スケートボード口コミデモサイト「ABEC-E」</h4>
+                    <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><img src="img/abec-pc.png" alt="スケートボード口コミデモサイト「ABEC-E」"></a>
+                    <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><h4>スケートボード口コミデモサイト「ABEC-E」</h4></a>
                 </div>
             </div>
         </section>
         <section id="service">
-            <h3 class="">Service</h3>
+            <h3>Service</h3>
                 <ul class="service-contents">
                     <li class="service-content">
                         <img src="img/desktop-computer.png" alt="サービス">
                         <h4 class="common-title-h3">ホームページ制作</h4>
-                        <p>お客様のご要望にそったあらゆるホームページを制作致します</p>
+                        <p>お客様のご要望にそったあらゆるホームページを制作致します。</p>
                     </li>
                     <li class="service-content">
                         <img src="img/wordpress.png" alt="サービス2">
