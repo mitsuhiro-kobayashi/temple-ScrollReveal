@@ -12,14 +12,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     <script src="js/script.js" defer></script>
-    <title>テンプレ|ScrollTriggerを実装</title>
+    <title>Mitsuhiro Kobayashi|名城WebLabo</title>
 </head>
 <body>
     <header class="header">
         <nav class="menu-pc">
             <ul class="menu-icons">
+                <li class="menu-icon"><a href="index.html">Home</a></li>
                 <li class="menu-icon"><a href="#">About</a></li>
-                <li class="menu-icon"><a href="#">Works</a></li>
+                <li class="menu-icon"><a href="#works1">Works</a></li>
                 <li class="menu-icon"><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -31,8 +32,9 @@
         </button>
         <nav class="menu-sp" id="js-nav">
             <ul class="menu-icons">
+                <li class="menu-icon"><a href="index.html">Home</a></li>
                 <li class="menu-icon"><a href="#">About</a></li>
-                <li class="menu-icon"><a href="#">Works</a></li>
+                <li class="menu-icon"><a href="#works1">Works</a></li>
                 <li class="menu-icon"><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -40,34 +42,73 @@
     </header>
     <main>
         <div class="firstview">
-            <h1>Mitsuhiro Kobayashi ---</h1>
+            <h1>Mitsuhiro Kobayashi --</h1>
             <br>
             <h2>名城WebLabo @Nagoya</h2>
         </div>
-        <section id="works1">
-            <div class="works">
-                <div class="work">
-                    <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><img src="img/yoga-se2.png" alt="名城ヨガスタジオモックアップイメージ"></a>
-                    <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><h4>デモサイト「名城ヨガスタジオ」</h4></a>
+        <div class="works-pc">
+            <section id="works1">
+                <h3>Works</h3>
+                <div class="works">
+                    <div class="work">
+                        <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><img src="img/yoga-se2.png" alt="名城ヨガスタジオモックアップイメージ"></a>
+                        <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><h4>デモサイト「名城ヨガスタジオ」</h4></a>
+                    </div>
+                    <div class="work">
+                        <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><img src="img/gary-version2.png" alt="ポートフォリオグレイデモサイト"></a>
+                        <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><h4>スクール課題ポートフォリオデモサイト</h4></a>
+                    </div>
                 </div>
-                <div class="work">
-                    <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><img src="img/gary-version2.png" alt="ポートフォリオグレイデモサイト"></a>
-                    <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><h4>スクール課題ポートフォリオデモサイト</h4></a>
+            </section>
+            <section id="works2">
+                <div class="works">
+                    <div class="work">
+                        <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><img src="img/techis-sp2.png" alt="スクール課題"></a>
+                        <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><h4>スクール課題</h4></a>
+                    </div>
+                    <div class="work">
+                        <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><img src="img/abec-pc.png" alt="スケートボード口コミデモサイト「ABEC-E」"></a>
+                        <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><h4>スケートボード口コミデモサイト「ABEC-E」</h4></a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="works2">
-            <div class="works">
-                <div class="work">
-                    <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><img src="img/techis-sp2.png" alt="スクール課題"></a>
-                    <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><h4>スクール課題</h4></a>
+            </section>
+        </div>
+        <div class="works-sp">
+            <section id="works1">
+                <h3>Works</h3>
+                <div class="works">
+                    <div class="work">
+                        <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><img src="img/yoga-se2.png" alt="名城ヨガスタジオモックアップイメージ"></a>
+                        <a href="https://portfolio-training-advanced.herokuapp.com/" target="_blank"><h4>デモサイト「名城ヨガスタジオ」</h4></a>
+                    </div>
+                    
                 </div>
-                <div class="work">
-                    <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><img src="img/abec-pc.png" alt="スケートボード口コミデモサイト「ABEC-E」"></a>
-                    <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><h4>スケートボード口コミデモサイト「ABEC-E」</h4></a>
+            </section>
+            <section id="works2">
+                <div class="works">
+                    <div class="work">
+                        <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><img src="img/gary-version2.png" alt="ポートフォリオグレイデモサイト"></a>
+                        <a href="https://portfolio-training-gray.herokuapp.com/" target="_blank"><h4>スクール課題ポートフォリオデモサイト</h4></a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="works3">
+                <div class="works">
+                    <div class="work">
+                        <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><img src="img/techis-sp2.png" alt="スクール課題"></a>
+                        <a href="https://temple-hamburger-animation.herokuapp.com/" target="_blank"><h4>スクール課題</h4></a>
+                    </div>
+                </div>
+            </section>
+            <section id="works4">
+                <div class="works">
+                    <div class="work">
+                        <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><img src="img/abec-pc.png" alt="スケートボード口コミデモサイト「ABEC-E」"></a>
+                        <a href="https://abec-e.w-worksdesign.com/public/" target="_blank"><h4>スケートボード口コミデモサイト「ABEC-E」</h4></a>
+                    </div>
+                </div>
+            </section>
+        </div>
         <section id="service">
             <h3>Service</h3>
                 <ul class="service-contents">
@@ -89,7 +130,12 @@
                 </ul>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>ⓒ 2022 名城WebLabo All rights reserved.</p>
+    </footer>
+    <!-- ページ上部へ戻るボタン -->
+    <a href="#" class="scroll-button"><span class="scroll-button-arrow"></span></a>
+    <script src="js/hamburger.js"></script>
 </body>
 </body>
 </html>

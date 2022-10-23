@@ -5,8 +5,8 @@ sections.forEach(el => {
     gsap.from(el, .5, {
         opacity: 0,
         y: 20,
-        scale: 0.6,//伸縮
-        // ease: 'back',
+        scale: 0.8,//伸縮
+        ease: 'back',
         scrollTrigger: {
             trigger: el,
             start: 'top 90%',

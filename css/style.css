@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
+/*******
+common
+*******/
 html {
   /* スムーススクロール */
   scroll-behavior: smooth;
@@ -8,15 +11,12 @@ html {
 body {
   color: #333;
   font-family: 'Zen Kaku Gothic New', sans-serif;
-}
-main,header{
   width: min(1000px, 95%);
   margin: auto;
 }
 section {
   padding: 30px;
   background-color: #D3D3D3;
-  min-height: 500px;
   border-radius: 10px;
   text-align: center;
 }
@@ -30,20 +30,22 @@ h3 {
 h4 {
   font-size: 20px;
   font-weight: bold;
+  margin-top: 1em;
 }
 
 /*******
 header
 *******/
 .header {
-  margin-top: 40px;
+  margin-top: 5em;
+  margin-right: 4em;
 }
 .menu-icons {
   text-align: right;
   align-items: center;
 }
 .menu-icon {
-  margin: 0 10px;
+  margin: 0 1em;
   display: inline-block;
 }
 .menu-icon a {
@@ -76,7 +78,7 @@ firstview
   left: 0;
 }
 .firstview h2 {
-  font-size: 50px;
+  font-size: 42px;
   margin: 10px inherit;
   position: absolute;
   top: 60%;
@@ -87,6 +89,9 @@ firstview
 /*******
 works
 *******/
+.works-sp {
+  display: none;
+}
 .works {
   display: flex;
   justify-content: space-between;
@@ -105,6 +110,7 @@ service
 *******/
 #service {
   background-color: #fff;
+  min-height: 500px;
 }
 .service-contents {
   display: flex;
@@ -123,11 +129,185 @@ service
   text-align: left;
   font-size: 20px;
 }
-
-
 /*******
 footer
 *******/
-footer {
-  padding-bottom: 100px;
+footer p {
+  text-align: center;
+  color: #D3D3D3;
+  margin: 3em 0;
+}
+
+/*********
+スクロールボタンscroll-button
+**********/
+.scroll-button {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 2px solid #D3D3D3;
+  text-align: center;
+  z-index: 100;
+}
+.scroll-button-arrow {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-top:  3px solid #949494;
+  border-left: 3px solid #949494;
+  transform: rotate(45deg) translate(12px, 12px);
+}
+
+/*********
+media
+**********/
+@media screen and (max-width: 768px) {
+  /*********
+  hamburger-menu
+  **********/
+    .hamburger-btn {
+      display: block;
+      position: fixed;
+      right: 30px;
+      width: 50px;
+      height: 44px;
+      transition: 1s;
+      border: none;
+      background: transparent;
+      z-index: 100;
+  }
+  .inner_line {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 30px;
+      height: 4px;
+      background-color: #949494;
+      transition: 1s;
+      border-radius: 4px;
+  }
+  #line1 {
+      top: 10px;
+  }
+  #line2 {
+      top: 20px;
+  }
+  #line3 {
+      bottom: 10px;
+  }
+  .menu-pc {
+      display: none;
+  }
+  .menu-sp {
+      display: block;
+      position:fixed;
+      z-index: 2;
+      top:0;
+      right: -130%;
+      width:100%;
+      height: 100vh;/*表示する高さ*/
+      background:rgba(56, 56, 56, 0.9);  /*０.7秒かけてナビメニューがスライドする*/
+      transition: .7s;
+  }
+  .menu-icons {
+      display: block;
+      position: absolute;
+      top:40%;
+      left:40%;
+      transform: translate(-50%,-50%);
+      width: 70%;
+      text-align: center;
+  }
+  .menu-icon {
+      margin: 30px 0;
+      display: block;
+  }
+  .menu-icon a {
+      font-size: 25px;
+      display: block;
+  }
+  /* アイコンをクリックした時の動作のCSS */
+  .in{
+      right: -20%;
+  }
+  .line_1,.line_2,.line_3{
+      background: #949494;
+  }
+  .line_1 {
+      /*-45度回転させる*/
+      transform: translateY(10px) rotate(-45deg);
+      top: 0;
+  }
+  .line_2 {
+      opacity: 0;
+  }
+  .line_3 {
+      /*45度回転させる*/
+      transform: translateY(-10px) rotate(45deg);
+      bottom: 0;
+  }
+  /*******
+  common
+  *******/
+  section {
+    padding: 20px;
+  }
+  /*******
+  header
+  *******/
+  .header {
+    margin-top: 1em;
+  }
+  /*******
+  firstview
+  *******/
+  .firstview h1 {
+    font-size: 32px;
+  }
+  .firstview h2 {
+    font-size: 28px;
+  }
+  /*******
+  works
+  *******/
+  .works-pc {
+    display: none;
+  }
+  .works-sp {
+    display: block;
+  }
+  .work {
+    width: 100%;
+  }
+  .works img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  /*******
+  service
+  *******/
+  #service {
+    min-height: 300px;
+  }
+  .service-contents {
+    display: block;
+    width: 100%;
+  }
+  .service-content {
+    width: 100%;
+    margin: 10% 0;
+    display: inline-block;
+  }
+  .service-content img {
+    width: 70%;
+  }
+  .scroll-button {
+    bottom: 60px;
+  }
 }
