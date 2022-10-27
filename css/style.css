@@ -256,6 +256,7 @@ media
   *******/
   section {
     padding: 20px;
+    margin-top: 70px;
   }
   /*******
   header
@@ -288,6 +289,9 @@ media
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+  #works4 {
+    min-height: 350px;
   }
   /*******
   service
