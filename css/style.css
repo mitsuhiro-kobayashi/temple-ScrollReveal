@@ -153,7 +153,7 @@ footer p {
   border-radius: 50px;
   border: 2px solid #D3D3D3;
   text-align: center;
-  z-index: 100;
+  z-index: 5;
 }
 .scroll-button-arrow {
   display: inline-block;
