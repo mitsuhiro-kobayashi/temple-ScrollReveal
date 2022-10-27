@@ -11,7 +11,7 @@ sections.forEach(el => {
             trigger: el,
             start: 'top 90%',
             end: '+=300px',
-            markers: true,//スタートと終わりの位置が分かる
+            // markers: true,//スタートと終わりの位置が分かる
             scrub: true,//スクロール量に応じて動く
             // once: true,//一回こっきりかどうか
         }
@@ -25,7 +25,7 @@ gsap.to('.firstview', 1, {
         start: '30% 20%',
         end: '70% 20%',
         opacity: 1,
-        markers: true,
+        // markers: true,
         scrub: true,
     }
 })
