@@ -19,6 +19,7 @@ section {
   background-color: #D3D3D3;
   border-radius: 10px;
   text-align: center;
+  margin-top: 70px;
 }
 section + section {
   margin-top: 70px;

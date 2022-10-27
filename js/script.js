@@ -11,7 +11,7 @@ sections.forEach(el => {
             trigger: el,
             start: 'top 90%',
             end: '+=300px',
-            markers: true,
+            markers: true,//スタートと終わりの位置が分かる
             scrub: true,//スクロール量に応じて動く
             // once: true,//一回こっきりかどうか
         }
