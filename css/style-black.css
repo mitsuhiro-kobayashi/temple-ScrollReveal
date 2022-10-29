@@ -13,14 +13,14 @@ body {
   color: #fff;
   font-family: 'Zen Kaku Gothic New', sans-serif;
   width: min(1000px, 95%);
-  height: 90%;
+  height: 90vh;
   margin: auto;
   background-color: #333333;
   position: relative;
 }
-.contact {
+.common-contents {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 0;
 }
 h2 {
@@ -40,6 +40,9 @@ h4 {
 /*******
 contact.html
 *******/
+.contact-contents {
+    margin-top: 5em;
+}
 .contact-contents a {
     text-decoration: underline;
 }
@@ -87,6 +90,33 @@ footer p {
     color: #D3D3D3;
     margin: 3em 0;
 }
+
+/*******
+about.html
+*******/
+.contact h3 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+table {
+    width: 100%;
+    border-collapse: 1px solid;
+    font-size: 20px;
+    border-bottom: 1px dashed;
+}
+th {
+    text-align: center;
+    width: 30%;
+    padding: 2% 0 1% 0;
+    font-weight: normal;
+    border-bottom: 1px dashed;
+}
+td {
+    width: 70%;
+    padding: 2% 0 1% 0;
+    border-bottom: 1px dashed;
+}
+
 
 /*********
 media
