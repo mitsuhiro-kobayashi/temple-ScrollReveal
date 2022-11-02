@@ -11,7 +11,7 @@ html {
 body {
   color: #333;
   font-family: 'Zen Kaku Gothic New', sans-serif;
-  width: min(1000px, 95%);
+  width: min(1000px, 90%);
   margin: auto;
 }
 section {
@@ -38,8 +38,8 @@ h4 {
 header
 *******/
 .header {
-  margin-top: 5em;
-  margin-right: 4em;
+  padding-top: 5em;
+  padding-right: 4em;
 }
 .menu-icons {
   text-align: right;
@@ -263,7 +263,7 @@ media
   header
   *******/
   .header {
-    margin-top: 1em;
+    padding-top: 1em;
   }
   /*******
   firstview
@@ -287,7 +287,7 @@ media
     width: 100%;
   }
   .works img {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: contain;
   }

@@ -12,7 +12,7 @@ html {
 body {
   color: #fff;
   font-family: 'Zen Kaku Gothic New', sans-serif;
-  width: min(1000px, 95%);
+  width: min(1000px, 90%);
   height: 90vh;
   margin: auto;
   background-color: #333333;
@@ -56,8 +56,8 @@ contact.html
 header
 *******/
 .header {
-  margin-top: 5em;
-  margin-right: 4em;
+  padding-top: 5em;
+  padding-right: 4em;
 }
 .menu-icons {
   text-align: right;
@@ -103,6 +103,7 @@ table {
     border-collapse: 1px solid;
     font-size: 20px;
     border-bottom: 1px dashed;
+    margin-top: 5%;
 }
 th {
     text-align: center;
@@ -115,6 +116,16 @@ td {
     width: 70%;
     padding: 2% 0 1% 0;
     border-bottom: 1px dashed;
+}
+.about-txt ul {
+margin: 3% 0;
+}
+.about-txt li {
+    margin: 2% 0;
+    text-decoration: underline;
+}
+.about-txt li a {
+    font-size: 20px;
 }
 
 
@@ -214,11 +225,17 @@ section {
 padding: 20px;
 margin-top: 70px;
 }
+.common-contents {
+    top: 10%;
+}
+table {
+    margin-top: 10%;
+}
 /*******
 header
 *******/
 .header {
-margin-top: 1em;
+    padding-top: 1em;
 }
 .contact {
     left: 10%;
