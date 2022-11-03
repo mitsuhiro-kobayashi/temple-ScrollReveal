@@ -7,21 +7,16 @@ common
 html {
   /* スムーススクロール */
     scroll-behavior: smooth;
-    height: 100%;
 }
 body {
   color: #fff;
   font-family: 'Zen Kaku Gothic New', sans-serif;
   width: min(1000px, 90%);
-  height: 90vh;
   margin: auto;
   background-color: #333333;
-  position: relative;
 }
 .common-contents {
-    position: absolute;
-    top: 30%;
-    left: 0;
+    margin-top: 25%;
 }
 h2 {
     font-size: 42px;
@@ -51,6 +46,13 @@ contact.html
 }
 .contact-content {
     margin-top: 2em;
+}
+.contact h3 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.contact-footer {
+    margin-top: 45%;
 }
 /*******
 header
@@ -82,28 +84,40 @@ header
 footer
 *******/
 footer {
-    position: sticky;
-    top: 100vh;
+
 }
 footer p {
     text-align: center;
     color: #D3D3D3;
-    margin: 3em 0;
+    margin: 5em 0 0 0;
 }
 
 /*******
 about.html
 *******/
-.contact h3 {
-    margin-top: 20px;
-    font-size: 30px;
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0 5% 0;
 }
+.about-img {
+    width: 35%;
+}
+.about-img img {
+    border-radius: 60%;
+    width: 100%;
+    border: #333333 solid 1px;
+}
+.about-table {
+    width: 65%;
+}
+
 table {
     width: 100%;
     border-collapse: 1px solid;
     font-size: 20px;
     border-bottom: 1px dashed;
-    margin-top: 5%;
+    margin-left: 5%;
 }
 th {
     text-align: center;
@@ -111,6 +125,7 @@ th {
     padding: 2% 0 1% 0;
     font-weight: normal;
     border-bottom: 1px dashed;
+    margin-left: 2%;
 }
 td {
     width: 70%;
@@ -225,8 +240,17 @@ section {
 padding: 20px;
 margin-top: 70px;
 }
-.common-contents {
-    top: 10%;
+/*******
+about.html
+*******/
+.about-content {
+    display: block;
+}
+.about-img {
+    width: 100%;
+}
+.about-table {
+    width: 100%;
 }
 table {
     margin-top: 10%;
