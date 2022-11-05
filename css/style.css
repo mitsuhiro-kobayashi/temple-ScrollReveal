@@ -60,8 +60,11 @@ header
   display: none;
 }
 /*******
-firstview
+main
 *******/
+.works-sp {
+  display: none;
+}
 .firstview {
   height: 90vh;
   background-color: #fff;
@@ -86,12 +89,8 @@ firstview
   left: 0;
   color: #D3D3D3;
 }
-
-/*******
-works
-*******/
-.works-sp {
-  display: none;
+.works-h3 {
+  text-align: center;
 }
 .works {
   display: flex;

@@ -29,3 +29,15 @@ gsap.to('.firstview', 1, {
         scrub: true,
     }
 })
+
+gsap.from('.works-h3', 1, {
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '.works-h3',
+        start: '-500% 50%',
+        end: '200% 40%',
+        opacity: 1,
+        markers: true,
+        scrub: true,
+    }
+})
