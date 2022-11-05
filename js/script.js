@@ -37,7 +37,7 @@ gsap.from('.works-h3', 1, {
         start: '-500% 50%',
         end: '200% 40%',
         opacity: 1,
-        markers: true,
+        // markers: true,
         scrub: true,
     }
 })
