@@ -45,7 +45,7 @@ html {
 
 body {
 /* どこがはみ出しているかが分かる */
-  outline: 1px #FFA500 solid;
+  /* outline: 1px #FFA500 solid; */
   margin: 0;
 }
 
